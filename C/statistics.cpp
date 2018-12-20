@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//   SD
+//  Statistics
 //
 //  Created by Caitlin Sigler on 11/3/16.
 //  Copyright © 2016 Caitlin Sigler. All rights reserved.
@@ -28,5 +28,5 @@ double standardDeviation (double A[], int size){
 }
 
 int main() {
-
+    return 0;
 }
