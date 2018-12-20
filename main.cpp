@@ -1,6 +1,5 @@
 //
 //  main.cpp
-//  homework 6
 //
 //  Created by Caitlin Sigler on 11/3/16.
 //  Copyright © 2016 Caitlin Sigler. All rights reserved.
