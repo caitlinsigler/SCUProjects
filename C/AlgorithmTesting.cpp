@@ -5,21 +5,26 @@
 //  Created by Caitlin Sigler on 11/29/18.
 //  Copyright © 2018 Caitlin Sigler. All rights reserved.
 //
+// This algorithm was developed for Uadopt.netlify.com to compare a user's preference of a given dog trait, ranked on a 
+// scale of 1-5, with a breed's ranking for that trait, also on a scale of 1 to 5.
+// The algrithm returns a matchIndex which quantifies the level of compatibility between the user and the breed.
+// The lower the match index, the more compatible the user and breed are.
 
 #include <iostream>
 using namespace std;
 #include <cmath>
 
 
-int matching ( int a[], int b[]){
+int matching ( int userPrefs[], int breedTraits[]){ //array values are pre-aligned by trait
     int matchIndex=0;
     
     for (int i=0; i<5; i++){
-            if (abs(a[i]- b[i])>0){
-                matchIndex+= abs(a[i]- b[i])+ abs(a[i]-b[i]) -1;
+            if (abs(userPrefs[i]- breedTraits[i])>0) //if rank is equal, add nothing
+            {
+                matchIndex+= abs(userPrefs[i]- breedTraits[i])+ abs(userPrefs[i]-breedTraits[i]) -1;
             }
     }
-    return matchIndex;
+    return matchIndex; 
 }
 
 
