@@ -9,6 +9,7 @@
 #include <iostream>
 using namespace std;
 
+//Caulates distance between two integers on a number line without using the abs function or creating any new variables
 int distance(int a, int b){
     if ((a-b)>=0){
         return a-b;
@@ -20,11 +21,11 @@ int distance(int a, int b){
 
 int main() {
    
-  var a= 7;
-  var b= 5;
-  var c= 15;
-  var d= -17;
-  var e= -8;
+  int a= 7;
+  int b= 5;
+  int c= 15;
+  int d= -17;
+  int e= -8;
   
   cout<<distance(a,b)<<endl;
   cout<<distance(b,c)<<endl;
