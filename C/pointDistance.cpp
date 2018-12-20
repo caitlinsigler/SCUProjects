@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  8.2
+//  Point Distance (Struct)
 //
 //  Created by Caitlin Sigler on 11/17/16.
 //  Copyright © 2016 Caitlin Sigler. All rights reserved.
