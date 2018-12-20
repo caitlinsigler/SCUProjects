@@ -1,5 +1,6 @@
 //
 //  main.cpp
+//  Get Index
 //
 //  Created by Caitlin Sigler on 11/3/16.
 //  Copyright © 2016 Caitlin Sigler. All rights reserved.
@@ -8,7 +9,8 @@
 #include <iostream>
 using namespace std;
 
-string find_value(int A[], int size, int value){
+//Returns the index(s) of a value in an array
+string getIndex(int A[], int size, int value){
     bool isFound= 0;
     string index= "";
     for (int i=0; i<size; i++){
@@ -30,7 +32,7 @@ int main() {
     int value=88;
     int A[]= {11, 2, 15, 88, 99, 11, 88};
     
-    cout<< find_value(A, size, value)<< endl;
+    cout<< getIndex(A, size, value)<< endl;
     
     return 0;
 }
