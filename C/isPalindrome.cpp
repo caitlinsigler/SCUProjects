@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-//Determines if a string is a palindrome without using the reverse function or creating more than 1 new varibale.
+//Determines if a string is a palindrome without using the reverse function.
 bool isPalindrome(string s) {
   var counter=0;
   for (var i = s.length() - 1; i >= 0; i--){
