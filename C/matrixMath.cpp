@@ -56,7 +56,7 @@ Matrix matrixAdd(Matrix m1, Matrix m2) {
     }
     return m;
 }
-Matrix matrixSum (Matrix mats[],int size){
+Matrix matrixSum (Matrix matrices[],int size){
     Matrix s;
     for (int i=0; i<size; i++) {
         s= matrixAdd(s, mats[i]);
