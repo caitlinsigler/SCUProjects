@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  cs 60 Hw 2 ATM
+//  ATM
 //
 //  Created by Caitlin Sigler on 1/24/17.
 //  Copyright © 2017 Caitlin Sigler. All rights reserved.
