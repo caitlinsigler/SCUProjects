@@ -9,14 +9,14 @@
 #include <iostream>
 using namespace std;
 
-struct matrix {
+struct Matrix {
     int row1[3];
     int row2[3];
     int row3[3];
 };
 
-matrix getMatrix (int row1[3], int row2[3], int row3[3]){
-    matrix m;
+Matrix getMatrix (int row1[3], int row2[3], int row3[3]){
+    Matrix m;
     for (int i=0; i<3; i++) {
         m.row1[i]= row1[i];
     }
@@ -29,7 +29,7 @@ matrix getMatrix (int row1[3], int row2[3], int row3[3]){
     return m;
 }
 
-void PrintMatrix(matrix m){
+void printMatrix(Matrix m){
     for (int i=0; i<3; i++) {
         cout<< m.row1[i];
     }
@@ -43,23 +43,23 @@ void PrintMatrix(matrix m){
     }
     cout<<endl;
 }
-matrix matrixadd(matrix m1, matrix m2) {
-    matrix out;
+Matrix matrixAdd(Matrix m1, Matrix m2) {
+    Matrix m;
     for (int i=0; i<3; i++) {
-        out.row1[i]= m1.row1[i]+m2.row1[i];
+        m.row1[i]= m1.row1[i]+m2.row1[i];
     }
     for (int i=0; i<3; i++) {
-        out.row2[i]= m1.row2[i]+m2.row2[i];
+        m.row2[i]= m1.row2[i]+m2.row2[i];
     }
     for (int i=0; i<3; i++) {
-        out.row3[i]= m1.row3[i]+m2.row3[i];
+        m.row3[i]= m1.row3[i]+m2.row3[i];
     }
-    return out;
+    return m;
 }
-matrix MatrixSum (matrix mats[],int size){
-    matrix s;
+Matrix matrixSum (Matrix mats[],int size){
+    Matrix s;
     for (int i=0; i<size; i++) {
-        s= matrixadd(s, mats[i]);
+        s= matrixAdd(s, mats[i]);
     }
     return s;
 }
@@ -75,15 +75,15 @@ int main() {
    
     
 
-    matrix x= getMatrix(a, b, c);
-    matrix y= getMatrix(d, e, f);
-    matrix A[]= {x, y, y};
+    Matrix x= getMatrix(a, b, c);
+    Matrix y= getMatrix(d, e, f);
+    Matrix A[]= {x, y, y};
     
-    PrintMatrix(x);
+    printMatrix(x);
     cout<<endl;
-    PrintMatrix(matrixadd(y, y));
+    printMatrix(matrixAdd(y, y));
     cout<<endl;
-    PrintMatrix(MatrixSum(A, 3));
+    printMatrix(matrixSum(A, 3));
     
     return 0;
 }
