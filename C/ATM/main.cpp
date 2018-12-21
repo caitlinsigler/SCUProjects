@@ -24,11 +24,3 @@ int main() {
     return 0;
 }
 
-Atm::Atm(){
-    tens=6;
-    twenties=6;
-}
-Atm:: Atm(int ten, int twen){
-    twenties= twen;
-    tens= ten;
-}
